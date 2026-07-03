@@ -1,0 +1,15 @@
+{
+  "users": ["Viraj", "Swaraj"],
+  "employee": {
+    "name": "Raj",
+    "roll": 43
+  },
+  "student": [
+    {
+      "name": "Saurabh",
+      "id": 77
+    }
+  ],
+  "admin": "Bhumik"
+}
+
