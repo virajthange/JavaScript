@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Details HW</title>
+    <style>
+      * {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .form-container {
+        width: 100%;
+        height: 100vh;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        border-radius: 8px;
+        background-color: rgb(225, 204, 176);
+        width: 30vw;
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        gap: 20px;
+      }
+      form input {
+        border: none;
+        border-radius: 8px;
+        padding: 5px 10px;
+      }
+      form button {
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        padding: 5px 10px;
+        background-color: rgba(165, 42, 42, 0.518);
+        cursor: pointer;
+      }
+      form select {
+        border: none;
+        border-radius: 8px;
+        padding: 5px 10px;
+      }
+      .marks {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="form" action="">
+        <input
+          type="text"
+          name="firstName"
+          placeholder="Enter your first name"
+        />
+        <input type="text" name="lastName" placeholder="Enter your last name" />
+        <input type="email" name="email" placeholder="Enter your email" />
+        <div class="gender-container">
+          Select your gender:
+          <input name="gender" type="radio" value="Male" />Male
+          <input name="gender" type="radio" value="female" />Female
+        </div>
+
+        <div class="skills">
+          <label for="skills">Choose your skills:</label><br />
+          <input type="checkbox" name="skills" id="java" value="java" />
+          <label for="java">Java</label>
+          <input type="checkbox" name="skills" id="python" value="python" />
+          <label for="python">Python</label>
+          <input type="checkbox" name="skills" id="js" value="js" />
+          <label for="js">JS</label>
+        </div>
+
+        <select name="country" id="country">
+          <option value="India">India</option>
+          <option selected value="Japan">Japan</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+        </select>
+
+        <div class="marks">
+          <input
+            type="range"
+            min="35"
+            max="100"
+            name="percentage"
+            class="marks-input"
+          />
+          <span class="span-marks">35</span>
+        </div>
+        <input
+          type="date"
+          name="birthDate"
+          placeholder="Enter your birth date"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+        <input
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirm your password"
+        />
+
+        <button class="login-btn" type="submit">Register</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

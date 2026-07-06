@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid rgb(144, 142, 142);
+        padding: 15px;
+        border-radius: 9px;
+      }
+      form input {
+        border: 1px solid rgba(0, 0, 0, 0.33);
+        padding: 7px;
+        border-radius: 10px;
+      }
+      .inp,
+      .btn {
+        padding: 5px;
+        border: 1px solid rgb(131, 124, 124);
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      input {
+        display: inline;
+      }
+      .marks-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 5px;
+      }
+      .marks-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .submit-btn {
+        cursor: pointer;
+        background-color: rgba(0, 128, 0, 0.359);
+        border: none;
+        border-radius: 8px;
+        padding: 5px 15px;
+        color: black;
+        font-weight: 600;
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="head">Day 30 to learn Javascript</h1>
+    <button class="btn">Button</button>
+    <input type="text" placeholder="Enter the key" class="inp" />
+
+    <form class="form" action="">
+      <h2>Fill your details</h2>
+      <input
+        required
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter username"
+      />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter password"
+      />
+      <div class="skills">
+        <label for="skills">Choose skills:</label><br />
+        <label for="java">Java</label>
+        <input type="checkbox" id="java" name="skills" value="java" />
+        <label for="js">Js</label>
+        <input type="checkbox" id="js" name="skills" value="js" />
+        <label for="python">Python</label>
+        <input type="checkbox" id="python" name="skills" value="python" />
+        <br />
+        <br />
+        <div class="marks-input">
+          <label for="marks">Enter your marks</label>
+          <div class="marks-div">
+            <input id="marks" name="marks" type="range" max="100" min="35" /><span
+              class="span-marks"
+              >65</span
+            >
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="login submit-btn">Login</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
